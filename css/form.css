@@ -1,0 +1,28 @@
+.h1
+{
+    width: auto;
+    height: auto;
+    background-color: #387d22;
+    
+}
+.tr1
+{
+    font-weight: bold;
+}
+form
+{
+    position: relative;
+}
+.input_tuoi::after
+{
+    position: absolute;
+    content: "Tuổi";
+    left: 147px;
+    top: 280px;
+   
+}
+input[type="number"]
+{
+    display: block;
+    width: 80px;
+}

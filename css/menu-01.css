@@ -1,0 +1,74 @@
+*, *::before, *::after
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: 0px;
+}
+html
+{
+    font-size: 62.5%;
+    /* 1rem=10px */
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+}
+:root
+{
+    --primary-color: #AAD862;
+    --hover-color:#78B43D;
+    --text-hover-color: #FFFFFF;
+    --text-color: #000000;
+}
+a
+{
+    text-decoration: none;
+}
+.nav
+{
+    width: 20rem;
+    background-color: var(--primary-color);
+    margin: .5rem 0 0 1rem;
+}
+.nav_item
+{
+    padding: 1rem 0 1rem .5rem;
+    border-bottom: 1px solid var(--text-color) ;
+    position: relative;
+}
+.nav_item:last-child
+{
+    border: none;
+}
+.nav_link
+{
+    color: var(--text-color);
+}
+.nav_item:hover
+{
+    background-color: var(--hover-color);
+    color: var(--text-hover-color);
+    
+}
+.nav_item:hover > .nav_link
+{
+    color: var(--text-hover-color);
+}
+.nav_dropdown
+{
+    display: none;
+    width: 20rem;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+.nav_item:hover > .nav_dropdown
+{
+    position:absolute ;
+    display: block;
+} 
+
+
+
+
+

@@ -1,0 +1,503 @@
+/* Biến Css */
+:root
+{
+    --primary:#64c29e;
+    --heading:#353738;
+    --text-color:#848789;
+    --bg-light:#f7f7f7;
+    --gg-white:#ffffff;
+    --input-border:#d3d7d9;
+    --text-input:#c8c8c8;
+}
+button, input, textarea
+{
+    font-family: 'Lato',sans-serif;
+}
+button
+{
+    cursor: pointer;
+}
+img
+{
+    display: block;
+    /* max-width: 100%; */
+}
+.wrapper
+{
+    max-width: 160rem;
+    margin: 0 auto;
+}
+.header
+{
+    min-height: 80rem;
+    background-image: url(../anh/bg-header.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    display: flex;
+    
+}
+.nav
+{
+    margin-top: 3.5rem;
+}
+.nav__list
+{
+    display: flex;
+    align-items: center;
+}
+
+.nav__item
+{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    position: relative;
+}
+.nav__item:first-child::after, .nav__item:nth-child(4)::after
+{
+    content: '.';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 2rem;
+}
+.nav__link
+{
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--heading);
+}
+/* END CSS HEADER  */
+.feature__header
+{
+    padding: 11.8rem 1.5rem 14.5rem;
+    background-color: var(--bg-light);
+}
+
+.feature__img-top
+{
+    margin: 0 auto 3.5rem;
+}
+
+.feature__heading
+{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+    color: var(--heading);
+    letter-spacing: 0.5rem;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.feature__header-desc
+{
+    max-width: 105rem;
+    margin: auto;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    line-height: 1.6rem;
+    text-align: center;
+}
+
+.feature__item
+{
+    display: flex;
+    flex-flow: nowrap;
+    height: 60rem;
+    overflow: hidden;  
+}
+
+.feature__item-img
+{
+    width: 67%;
+    position: relative;
+}
+.feature__item-content
+{
+    width: 43%;
+}
+.feature__item-img .img__bg
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.feature__item-img .img__brand
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.feature__item-content
+{
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feature__item-content-top
+{
+  padding: 0 7rem;
+  position: relative;
+  background-color: var(--bg-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 67%;
+}
+.feature__item-text
+{
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: justify;
+  color: var(--text-color);
+  padding-bottom: 3.9rem;
+  position: relative;
+}
+
+/* đổi vị trí của feature li 2 */
+.feature__item:nth-child(2) .feature__item-img
+{
+    order: 2;
+}
+.feature__item:last-child > .feature__item-img
+{
+    width: 33%;
+}
+.feature__item:last-child > .feature__item-content
+{
+    width: 34%;
+}
+/* Tạo mũi tên */
+.feature__item-content-top::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%) rotate(45deg);
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--gg-white);
+    z-index: 50;
+}
+.feature__item-text::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 5rem;
+    height: 1px;
+    background-color: var(--text-color);
+}
+.twitter
+{
+    flex-flow: nowrap;
+    height: 46.9rem;
+    overflow: hidden; 
+    background-color: var(--bg-light); 
+}
+.twitter__lg
+{
+    display: flex;
+    font-size: 2.4rem;
+    margin-top: 12.4rem;
+    margin-bottom: 3.8rem;
+    justify-content: center;
+    color: #56c7ee;  
+}
+.twitter__heading
+{
+    display: flex;
+    font-size: 1.8rem;
+    justify-content: center;
+}
+.twitter__heading-tittle
+{
+  padding-right: 1.3rem ;  
+}
+.twitter__heading-time
+{   
+    color: var(--text-color);
+}
+.twitter__heading-time::before
+{
+    content: "/";
+    padding-left: 1.4rem ;
+    padding-right: 1.4rem;
+}
+.twitter__content
+{
+    text-align: center;
+    font-size: 2.4rem;
+    color: var(--text-color);
+    padding-top: 2.6rem;
+    max-width: 107.5rem;
+    margin: 0 auto;
+    margin-bottom: 10.4rem ;
+    
+}
+
+.twitter__scroll-item
+{
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 120px 120px 120px 120px;
+    background: var(--bg-light);
+    border: solid var(--text-input) .1rem;
+    margin-left: .9rem;
+}
+.twitter__scroll-list > .twitter__scroll-item:first-child
+{
+    background: var(--text-input);
+}
+.twitter__scroll-list
+{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10.4rem;
+}
+.images
+{
+/* height: 53.5rem; */
+overflow: hidden;
+display: flex;
+justify-content: space-between;
+}
+.images__block-item
+{
+  display: flex;
+  flex-direction: row;
+
+}
+.images__block
+{
+  width: 33.333%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.images__item
+{
+  position: relative;
+}
+.images__item-brand
+{
+  display:none;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  z-index: 20;
+}
+
+.images__item-brand > img
+{
+  margin: 0 auto;
+}
+.images__item-text
+{
+  padding-top:1.5rem ;
+  color: var(--gg-white);
+  line-height: 1.8;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: justify;
+  font-weight: bold;
+}
+.images__block:last-child > .images__block-item:first-child
+{
+  order: 2;
+}
+.images__item-bg
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.images__item:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  background-color: rgba(100, 194, 158, 0.8);
+	z-index: 10;
+  display: none;
+}
+.images__item:hover:before,
+.images__item:hover .images__item-brand {
+  display: block;
+}
+/* ./twwet */
+
+/* button */
+.twwet__button
+{
+  height: 20rem;
+  
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: #282f35;
+}
+.twwet__button-item
+{
+  margin-top: 7.5rem;
+  width: 30rem;
+  height: 5rem;
+  justify-content: center;
+  font-size: 1.4rem;
+  background: #282f35;
+  color: var(--gg-white);
+  border: solid 2px var(--gg-white); 
+}
+.twwet__button-item:hover
+{
+  background: rgba(100, 194, 158, 0.8) ;
+}
+/* ./button */
+
+/* mailing */
+.mailing
+{
+  height:47rem ;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.mailing__lg
+{
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+.mailing__lg-item
+{
+  margin: 0 auto 3.5rem ;
+  top: 16rem;
+}
+.mailing__content
+{
+  margin-top: 3.9rem;
+  font-size: 2.4rem;
+  color: var(--text-color);
+  margin: 0 auto 3.5rem ;
+}
+.mailing__input
+{
+  margin-left: 53.3rem;
+  display: flex;
+}
+.mailing__input-text
+{
+  width: 40rem;
+  height: 6.9rem;
+  margin-right: .8rem ;
+  font-size: 2rem;
+  padding-left: 2.7rem;
+  border: solid 1px var(--text-input);
+}
+.mailing__input-button
+{
+  width: 12.6rem;
+  height: 6.9rem;
+  background:  #64c29e;
+  border: none;
+  color: var(--gg-white);
+}
+/* ./mailing */
+
+/* footer  */
+.footer
+{
+  overflow: hidden;
+  display: flex;
+  height: 25rem;
+  background-color: var(--bg-light);
+  justify-content: space-around;
+
+}
+.footer__adr
+{
+  left: 0;
+  margin-left: 1rem;
+  color: var(--text-color);
+  margin-top: 9.7rem;
+  font-size: 1.39rem;
+}
+.footer__adr-line1
+{
+  font-size: 1.6rem;
+}
+.footer__lg
+{
+ display: flex;
+ margin-top: 10.8rem;
+ margin-left: -19rem;
+}
+.brand
+{
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 1.6rem;
+  border-radius: 120px 120px 120px 120px;
+  background-color: var(--heading);
+  color: white;
+  padding-top: .95rem;
+  padding-left: .95rem;
+  margin-right: 1.5rem;
+}
+.footer__author
+{
+  display: flex;
+  /* flex-direction: row; */
+  margin-top: 10.8rem; 
+}
+.footer__author-content
+{
+  margin-top: 1rem;
+  font-size: 1.39rem ;
+  margin-left: -10rem;
+  color: var(--text-color);
+  margin-right: 1rem;
+}
+.brand:nth-child(1)
+{
+  background-color: #78cdf0;
+}
+
+.brand:nth-child(2)
+{
+  background-color: #537bbd;
+  padding-left: 1.2rem;
+
+}
+.brand:nth-child(3)
+{
+  background-color: #eb5755;
+}
+
+
+/* ./footer  */
+

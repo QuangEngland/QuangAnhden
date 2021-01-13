@@ -1,0 +1,146 @@
+/* selector co ban */
+/* --------------------------------------- */
+/* class selector */
+/* .class1
+{
+    color: blueviolet;
+} */
+/* --------------------------------------- */
+/* id selector */
+/* #id1 */
+/* {
+    color: brown;
+    font-weight: bold;
+    font-size: 28px;
+} */
+/* --------------------------------------- */
+/* *, *::before, *::after
+{
+    margin: 0px;
+    padding: 0px;
+} */
+/* --------------------------------------- */
+/* atribute selector */
+/* input[type='text']
+{
+    border: 10px solid rebeccapurple; */
+}
+/* --------------------------------------- */
+/* input[class~='email']
+{
+    border: saddlebrown 15px solid;
+} */
+/* --------------------------------------- */
+/* input[class*='hoho']
+{
+    border: solid 20px blue;
+} */
+/* --------------------------------------- */
+/* a[href$='com']
+{
+    color: chartreuse;
+} */
+/* ky tu $:trong the cuoi cua the href
+ ky tu com la ky tu cuoi cung */
+
+/* a[href^='http']
+{
+    color: chocolate;
+} */
+/* ky tu ^:trong the 
+cuoi cua the href ky tu com la ky tu dau tien */
+/* --------------------------------------- */
+/* p[class|='title']
+{
+    color: coral;
+} */
+/* dung sau co dau -con lai gia tri dang sau khong quan trong   */
+/* --------------------------------------- */
+/* .a > .b (thẻ b là thẻ con của thẻ a) */
+/* .a h1 (thẻ h1 là thẻ trong của thẻ a) */
+/* .header > .header_logo
+{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+} */
+/* div.pesudo :first-child 
+{
+    color: red;
+}
+div.pesudo :first-of-type
+{
+    color: seagreen;
+}
+div.pesudo :last-child
+{
+    color: skyblue;
+}
+div.pesudo :last-of-type
+{
+    color: tomato;
+}
+div.pesudo :nth-child(4)
+{
+    color: violet;
+}
+div.pesudo :nth-of-type(4)
+{
+    color: yellow;
+}
+div.pesudo :nth-last-child(3)
+{
+    color: crimson;
+} */
+div.pesudo :nth-last-of-type(3)
+{
+    color: darkturquoise;
+}
+div.only-child :only-child
+{
+    color: darkslategrey;
+}
+input[name='username']:focus
+{
+    width: 500px;
+    height: 30px;
+    border: 5px solid red;
+    outline: none;
+}
+input[type='checkbox']:checked
+{
+    width: 300px;
+    height: 50px;
+}
+div.links a:active
+{
+    color: sienna;
+}
+div.links a:visited
+{
+    color: salmon;
+}
+div.links a:hover
+{
+    text-decoration: none;
+    color: slateblue.;
+}
+div.pesudo-element p::first-letter
+{
+    font-size:300px;
+    color: slategrey;
+}
+div.pesudo-element p::first-line
+{
+    font-size: 100px;
+    color: springgreen;
+}
+div.pesudo-element p::before
+{
+    /* content: url('..//reactjsClass/day1/hoho.jpg'); */
+    content: '';
+}
+div.pesudo-element p::before
+{
+    
+}

@@ -1,10 +1,101 @@
-.div
+/* Reset cơ bản */
+*, *::before, *::after
 {
-    background-color: rosybrown;
-    width: 200px;
-    height: 200px;
-    bottom: -10rem;
-    left: 20rem;
-    position:relative ;
-    border-radius: 120px 120px 120px 120px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/* Quy Định Font Chữ */
+/* 16px = 1rem = 100% */
+/* 1rem = 10px = 62.5% */
+/* Biến trong css */
+
+
+html
+{
+    font-size:50px;
+}
+body
+{
+    font-family: 'Pacifico', sans-serif;
+}
+:root
+{
+    /* Tương đương là thẻ html-dùng để khai báo biến */
+    --color-text:#2ECCFA;
+    --fontsize-text:3rem;
+}
+.title-text
+{
+    color: var(--color-text);
+    font-size: var(--fontsize-text);
+    text-shadow: royalblue 5px 10px 3px;
+}
+.title
+{
+    color: var(--color-text);
+}
+.fa-angellist
+{
+    color: red;
+}
+
+ .box
+{
+    height: 5rem; 
+    width: 5rem;
+    border: 1px red solid;
+
+    /* background-image: url(../picture/hoho.jpg); */
+    /* background-position: center center;
+    width: 10rem;
+    height: 10rem;
+    background-color: royalblue;
+    
+    background-size: cover;
+    background-attachment: fixed; */
+    display: inline-block;
+} 
+.box-2
+{
+    width:5rem;
+    height: 5rem;
+    border: 1px red solid;
+    display: inline-block;
+    margin-left: -20px;
+    /* margin-top: 40px; */
+}
+.box-3 
+{
+    width: 10rem;
+    height: 10rem;
+    display: list-item;
+}
+
+.box-float--1
+{
+    width: 10rem;
+    height: 10rem;
+    background-color: red;
+}
+.box-float--2
+{
+    width: 10rem;
+    height: 10rem;
+    background-color:blue;
+}
+.box-float--3
+{
+    width: 10rem;
+    height: 10rem;
+    background-color:yellow;
+}
+.box-float
+{
+    float: right;
+}
+.clear
+{
+    clear: left;
 }
