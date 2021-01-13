@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellcome To T3h Class</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <center class="h1"><h1>Đăng Ký Thành Viên</h1></center>
+    <div>
+        <form action="" method="POST">
+            <table cellpadding="10" border="2">
+                <tr class="tr1">
+                    <td>Nội dung</td>
+                    <td>
+                        <center>Giá trị</center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Họ tên</td>
+                    <td>
+                        <input type="text" name="name" id="" required>
+                    </td>z
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email" id="" required></td>
+                </tr>
+                <tr>
+                    <td>Mật Khẩu</td>
+                    <td><input type="password" name="password" id="" required></td>
+                </tr>
+                <tr>
+                    <td>Avatar</td>
+                    <td><input type="file" name="picture" id="" required></td>
+                </tr>
+                <tr>
+                    <td>Số điện thoại</td>
+                    <td><input type="text" name="numberphone" id="" pattern="(\+84|0)\d{9,10}" required></td>
+                </tr>
+                <tr>
+                    <td>Tuổi</td>
+                    <td >
+                        <select id="" name="age">
+                            <option value="18"> 18 Tuổi </option>
+                            <option value="19"> 19 Tuổi </option>
+                            <option value="20"> 20 Tuổi </option>
+                            <option value="21"> 21 Tuổi </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Giới tính</td>
+                    <td><input type="radio" name="2" id="" checked>Nam<br>
+                        <input type="radio" name="2" id="" >Nữ</td>
+                </tr>
+                <tr>
+                    <td>Sở thích</td>
+                    <td>
+                        <input type="checkbox" name="bongchuyen" id="" >Bóng Chuyền <br>
+                        <input type="checkbox" name="caulong" id="" >Cầu Lông <br>
+                        <input type="checkbox" name="duathuyen" id="" >Đua Thuyền <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ghi chú</td>
+                    <td><textarea name="ghichu:" id="" cols="20" rows="3"></textarea></td>
+                </tr>
+            </table>
+            <div class="buttondangnhap">
+                    <button type="submit" value="">Đăng Ký</button>
+            </div>
+        </form>
+    </div>
+
+    
+</body>
+</html>

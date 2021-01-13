@@ -1,0 +1,10 @@
+.div
+{
+    background-color: rosybrown;
+    width: 200px;
+    height: 200px;
+    bottom: -10rem;
+    left: 20rem;
+    position:relative ;
+    border-radius: 120px 120px 120px 120px;
+}
