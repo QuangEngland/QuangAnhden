@@ -406,7 +406,7 @@ justify-content: space-between;
 }
 .mailing__input
 {
-  margin-left: 53.3rem;
+  margin: 0 auto;
   display: flex;
 }
 .mailing__input-text
